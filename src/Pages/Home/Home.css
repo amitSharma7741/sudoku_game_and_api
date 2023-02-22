@@ -1,0 +1,34 @@
+table {
+    border: 4px solid #000000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    transition: all 0.5s;
+}
+
+tr:nth-child(3n + 1) {
+    border-top: 4px solid #000000;
+}
+
+td:nth-child(3n + 1) {
+    border-left: 4px solid #000000;
+}
+
+/* td input {
+    color: #000000;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    background-color: #ffffff;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+} */
+@media (max-width: 600px) {
+    .inputval {
+
+        font-size: 10px;
+    }
+}
