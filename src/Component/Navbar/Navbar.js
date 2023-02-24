@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Navbar.css"
 import { Link, Outlet } from 'react-router-dom'
+import { FaGithub } from 'react-icons/fa'
+import { ExternalLink } from 'react-external-link';
 const Navbar = () => {
   return (
     <>
@@ -24,9 +26,28 @@ const Navbar = () => {
                     fontSize: '20px',
                     color: 'white',
                     textTransform: 'uppercase'
-                   }} href='/api/sudoku'>
+                   }} href='/api/sudoku'  
+                  //  set target to blank to open in new tab
+                    target='_blank'
+                   
+                   >
                     Sudoku API
                   </a>
+                </li> 
+                <li className='nav-item'> 
+                 
+                  <ExternalLink
+                  href="https://github.com/amitSharma7741/sudoku_game_and_api"
+                  className='nav-link fw-bold'
+                  style={{
+                    cursor: 'pointer',
+                    fontSize: '20px',
+                    color: 'white',
+                  
+                   }}
+                  >
+                    <FaGithub />
+                  </ExternalLink>
                 </li>
               </ul>
             </div>
