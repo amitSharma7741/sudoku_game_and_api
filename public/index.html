@@ -2,12 +2,36 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REBEMTWP2K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-REBEMTWP2K');
+</script>
+
+
+
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="theme-color" content="#000000" /> 
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!-- add some og meta tgas -->
+  <meta 
+    property="og:title" 
+    content="Sudoku game and API || Number Puzzle Game"
+  />
+  <meta 
+    property="og:description" 
+    content="Welcome to the Sudoku API and game! You can play Sudoku online with different levels of difficulty, and access puzzles and solutions through our API. Put your logic skills to the test with this logic-based number placement puzzle. Developers can integrate Sudoku puzzles into their applications or build Sudoku-solving algorithms using our API. Have fun exploring Sudoku with us!"
+    />
+  <!-- <meta
+    property="og:image"
+    content="https://sudoku-api.herokuapp.com/images/sudoku.png"
+  /> -->
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -26,7 +50,7 @@
     Sudoku game and API || Number Puzzle Game
   </title>
   <meta name="description"
-    content="Welcome to the Sudoku game and API page! Play Sudoku online with different levels of difficulty, and access puzzles and solutions through our API for programming purposes. Enjoy the challenge of this logic-based number placement puzzle and compete against yourself or others to see how quickly you can solve it. Our API provides an opportunity for developers to integrate Sudoku puzzles into their applications or build Sudoku-solving algorithms. Join us and have fun exploring Sudoku!">
+    content="Welcome to the Sudoku API and game! You can play Sudoku online with different levels of difficulty, and access puzzles and solutions through our API. Put your logic skills to the test with this logic-based number placement puzzle. Developers can integrate Sudoku puzzles into their applications or build Sudoku-solving algorithms using our API. Have fun exploring Sudoku with us!">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -38,16 +62,8 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+ 
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
