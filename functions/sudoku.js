@@ -91,12 +91,34 @@ exports.handler = async (event, context) => {
 
   var sudoku = sudokuGenerator();
   // console.log(sudoku);
+ 
+  
+  const difficultyArray = (level) => {
+    const easyArray =  sudoku.map(row => [...row]); 
+    const numZeroes = level;
+    let count = 0;
+    
+    while (count < numZeroes) {
+      const row = Math.floor(Math.random() * 9); // choose a random row index
+      const col = Math.floor(Math.random() * 9); // choose a random column index
+      
+      if (easyArray[row][col] !== 0) { // check if the position is already zero
+        easyArray[row][col] = 0; // set the position to zero
+        count++;
+      }
+    }
+    // console.log(easyArray); 
+    return easyArray;
+  } 
    
   const data = {
     game: "Sudoku",
     created_by: "Amit Sharma",
     info:"Each array in the data array represents a row in the sudoku grid.",
     data: sudoku,
+    easy:  difficultyArray(25),
+    medium: difficultyArray(45),
+    hard: difficultyArray(62),
     date: new Date().toISOString(), // 2021-03-31T18:30:00.000Z
     rules: [
       "Each row must contain the numbers 1-9 without repetition.",
