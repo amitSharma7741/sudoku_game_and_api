@@ -8,12 +8,12 @@ const Home = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const difficulty =
-    searchParams.get("difficulty") === "medium"
-      ? 0.55
+    searchParams.get("difficulty") === "easy"
+      ? 0.35
       : searchParams.get("difficulty") === "hard"
       ? 0.75
-      : 0.35;
-  console.log(difficulty);
+      : 0.55;
+  // console.log(difficulty);
 
   const fetchSudokuData = async () => {
     const response = await fetch("/api/sudoku");
@@ -44,8 +44,8 @@ const Home = () => {
       }
     }
 
-    console.log(allDivValue);
-    console.log("main data ", sudokuData);
+    // console.log(allDivValue);
+    // console.log("main data ", sudokuData);
     // console.log(currentSudoku);
 
     let count = 0;
