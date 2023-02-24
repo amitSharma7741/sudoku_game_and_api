@@ -1,3 +1,17 @@
+## Sudoku Game 
+
+```bash
+https://sudoku-game-and-api.netlify.app/
+```
+
+## API 
+
+```bash
+https://sudoku-game-and-api.netlify.app/api/sudoku
+```
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
