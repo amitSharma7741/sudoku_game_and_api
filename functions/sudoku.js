@@ -92,31 +92,32 @@ exports.handler = async (event, context) => {
   var sudoku = sudokuGenerator();
   // console.log(sudoku);
  
-  
+
   const difficultyArray = (level) => {
-    const easyArray =  sudoku.map(row => [...row]); 
+    const easyArray = sudoku.map((row) => [...row]);
     const numZeroes = level;
     let count = 0;
-    
+
     while (count < numZeroes) {
       const row = Math.floor(Math.random() * 9); // choose a random row index
       const col = Math.floor(Math.random() * 9); // choose a random column index
-      
-      if (easyArray[row][col] !== 0) { // check if the position is already zero
+
+      if (easyArray[row][col] !== 0) {
+        // check if the position is already zero
         easyArray[row][col] = 0; // set the position to zero
         count++;
       }
     }
-    // console.log(easyArray); 
+    // console.log(easyArray);
     return easyArray;
-  } 
-   
+  };
+
   const data = {
     game: "Sudoku",
     created_by: "Amit Sharma",
-    info:"Each array in the data array represents a row in the sudoku grid.",
+    info: "Each array in the data array represents a row in the sudoku grid.",
     data: sudoku,
-    easy:  difficultyArray(25),
+    easy: difficultyArray(25),
     medium: difficultyArray(45),
     hard: difficultyArray(62),
     date: new Date().toISOString(), // 2021-03-31T18:30:00.000Z
@@ -130,6 +131,20 @@ exports.handler = async (event, context) => {
       "The difficulty is determined by the number of clues given.",
       "The fewer clues, the harder the puzzle.",
       "The more clues, the easier the puzzle.",
+    ],
+    projects: [
+      {
+        title: "EVSTART: Electric Vehicle is the Future",
+        url: "https://evstart.netlify.app/",
+      },
+      {
+        title: "News Website in react",
+        url: "https://newsmon.netlify.app/",
+      },
+      {
+        title: "Hindi jokes API",
+        url: "https://hindi-jokes-api.onrender.com/",
+      },
     ],
     usefullinks: [
       {

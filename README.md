@@ -11,6 +11,57 @@ https://sudoku-game-and-api.netlify.app/api/sudoku
 ```
 
 
+## Output
+ 
+```jsonc
+{
+  "game": "Sudoku",
+  "created_by": "Amit Sharma",
+  "info": "Each array in the data array represents a row in the sudoku grid.",
+  "data": [],
+  "easy": [],
+  "medium": [],
+  "hard": [],
+  "date": "2023-03-02T04:34:33.994Z",
+  "rules": [
+    "Each row must contain the numbers 1-9 without repetition.",
+    "Each column must contain the numbers 1-9 without repetition.",
+    "Each of the nine 3x3 sub-boxes of the grid must contain the numbers 1-9 without repetition.",
+    "The sum of every single row, column and 3x3 box must be 45."
+  ],
+  "difficulty": [
+    "The difficulty is determined by the number of clues given.",
+    "The fewer clues, the harder the puzzle.",
+    "The more clues, the easier the puzzle."
+  ],
+  "projects": [
+    {
+      "title": "EVSTART: Electric Vehicle is the Future",
+      "url": "https://evstart.netlify.app/"
+    },
+    {
+      "title": "News Website in react",
+      "url": "https://newsmon.netlify.app/"
+    },
+    {
+      "title": "Hindi jokes API",
+      "url": "https://hindi-jokes-api.onrender.com/"
+    }
+  ],
+  "usefullinks": [
+    {
+      "title": "6 Advanced Sudoku Strategies explained",
+      "url": "https://www.sudokuonline.io/tips/advanced-sudoku-strategies"
+    },
+    {
+      "title": "Sudoku techniques",
+      "url": "https://www.conceptispuzzles.com/index.aspx?uri=puzzle/sudoku/techniques"
+    }
+  ]
+}
+
+
+```
 
 # Getting Started with Create React App
 
